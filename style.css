@@ -47,7 +47,9 @@ nav a{
     font-weight: normal;
     letter-spacing: -0.1em;
     font-size: 300px;
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    
 }
 
 #firstview p{
