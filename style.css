@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+    color: #A28068;
+    font-family: 'Zen Old Mincho', serif;
+}
+
+#firstview{
+    background-image: url(images/pc_background.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+nav{
+    font-family: 'Gideon Roman', cursive;
+    font-weight: normal;
+    letter-spacing: -0.05em;
+    display: flex;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 50%;
+    left: 0%;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    padding: 0 15px;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.first-text{
+    text-align: center;
+}
+
+#firstview h1{
+    text-align: left;
+    font-family: 'Gideon Roman';
+    font-weight: normal;
+    letter-spacing: -0.1em;
+    font-size: 300px;
+    position: absolute;
+}
+
+#firstview p{
+    font-size: 25px;
+    max-width: 300px;
+    text-wrap: wrap;
+    font-family: 'Gideon Roman', cursive;
+    font-weight: normal;
+    letter-spacing: -0.05em;
+    text-align: left;
+    position: absolute;
+    right: 8%;
+    bottom: 8%;
+}
+
+@media (max-width: 390px){
+    #firstview{
+        min-width: 390px;
+        min-height: 844px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .first-text{
+        min-width: 390px;
+        min-height: 844px;
+    }
+
+    #firstview h1{
+        font-size: 80px;
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: rotate(-90deg)
+    }
+
+    br{
+        display: none;
+    }
+
+    #firstview p{
+        font-size: 20px;
+    }
+}
+
+#history{
+    text-align: center;
+    background-color: #1E1E1E;
+    background-size: cover;
+    height: 900px;
+    padding: 130px 0px;
+    z-index: -1;
+    position: relative;
+}
+
+#history img{
+    z-index: -1;
+    position: absolute;
+}
+
+.history-text{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#history h2{
+    font-size: 40px;
+}
+
+#history p{
+    text-align: left;
+    max-width: 600px;
+    text-wrap: wrap;
+    margin: 0 auto;
+}
