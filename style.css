@@ -20,8 +20,9 @@ nav{
     display: flex;
     position: absolute;
     transform: rotate(-90deg);
-    top: 50%;
-    left: 0%;
+    transform-origin: 0 0;
+    top: 67%;
+    left: 5%;
 }
 
 nav:before {
@@ -171,3 +172,244 @@ span {
     content: "";
 }
 
+.wrap{
+    width: 100%;
+    height: 1612px;
+    position: relative;
+    z-index: 1;
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0;
+}
+
+#signs{
+    background-color: #1E1E1E;
+}
+
+#signs h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gideon Roman', cursive;
+    letter-spacing: -0.05em;
+    margin-bottom: 48px;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 252px;
+    justify-content: center;
+}
+
+.button{
+    background-color: #B19D8E;
+    opacity: 70%;
+    width: 232px;
+    height: 232px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 60px;
+    position: relative;
+}
+
+.button::before,
+.button::after {
+  content: ''; /* 擬似要素を生成 */
+  position: absolute; /* 位置を絶対的に設定 */
+  border-radius: 50%; /* 円形の要素に合わせて50%の丸みを設定 */
+}
+
+.button::before {
+  top: 50%; /* 内側の1つ目の枠線の位置を調整 */
+  left: 50%; /* 内側の1つ目の枠線の位置を調整 */
+  transform: translate(-50%,-50%);
+  border: 2px solid #333; /* 1つ目の枠線のスタイルと色を設定 */
+  width: 75%; /* 擬似要素の幅を100%に設定 */
+  height: 75%; /* 擬似要素の高さを100%に設定 */
+}
+
+.button::after {
+  top: 50%; /* 内側の2つ目の枠線の位置を調整 */
+  left: 50%; /* 内側の2つ目の枠線の位置を調整 */
+  transform: translate(-50%,-50%);
+  border: 2px dotted #333; /* 2つ目の枠線のスタイルを点線に設定 */
+  width: 80%; /* 擬似要素の幅を100%に設定 */
+  height: 80%; /* 擬似要素の高さを100%に設定 */
+}
+
+
+.button img{
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.button p{
+    color: #333;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#conversation{
+    background-color: #1E1E1E;
+    height: 500px;
+    position: relative;
+}
+
+.cloud-top{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+.cloud-bottom{
+    width: 272.01px;
+    height: 273px;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+
+#conversation h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gideon Roman', cursive;
+    letter-spacing: -0.05em;
+    margin-bottom: 48px;
+    padding-top: 160px;
+}
+
+.conversation-text p{
+    color: #F1EBE7;
+    font-size: 16px;
+    text-align: left;
+    line-height: 2;
+    text-wrap: wrap;
+    margin: 0 auto;
+    max-width: 704px;
+}
+
+.speech-bubbles{
+    max-width: 704px;
+    position: relative;
+    height: 220px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.speech-bubbles p{
+    color: #A28068;
+    border: 2px solid #A28068;
+    border-radius: 20px;
+    font-size: 26px;
+    padding: 10px 30px;
+}
+
+
+.ask{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+}
+
+
+.ask:before {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -16px;
+    border: 13px solid transparent;
+    border-top: 13px solid #1E1E1E;
+    z-index: 2;
+  }
+
+.ask:after {
+    content: "";
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+    margin-left: -17px;
+    border: 14px solid transparent;
+    border-top: 14px solid #A28068;
+    z-index: 1;
+  }
+
+.answer{
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+}
+
+.answer:before {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -16px;
+    border: 13px solid transparent;
+    border-top: 13px solid #1E1E1E;
+    z-index: 2;
+  }
+
+.answer:after {
+    content: "";
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+    margin-left: -17px;
+    border: 14px solid transparent;
+    border-top: 14px solid #A28068;
+    z-index: 1;
+  }
+
+#contact{
+    background-color: #1E1E1E;
+    height: 300px;
+    padding: 100px 145px 0px 145px;
+}
+
+.contact-box{
+    border: 1px solid #A28068;
+    padding: 48px 123px 55px 123px;
+    display: flex;
+    border-radius: 20px;
+}
+
+#contact h2{
+    font-size: 30px;
+    font-family: 'Gideon Roman', cursive;
+    letter-spacing: -0.05em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#contact p{
+    color: #F1EBE7;
+    font-size: 16px;
+    text-align: left;
+    line-height: 2;
+    text-wrap: wrap;
+    margin: 0 auto;
+    max-width: 704px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 130px;
+}
+
+.icon{
+    padding: 10px;
+}

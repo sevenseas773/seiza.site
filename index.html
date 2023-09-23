@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zodiac signs</title>
+    <link rel="stylesheet" href="modaal.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +14,9 @@
     <section id="firstview">
         <nav>
             <ul>
-                <li><a href="contact">CONTACT</a></li>
-                <li><a href="signs">SIGNS</a></li>
-                <li><a href="history">HISTORY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#signs">SIGNS</a></li>
+                <li><a href="#history">HISTORY</a></li>
             </ul>
         </nav>
         <div class="first-text">
@@ -40,6 +41,111 @@
                 </p>
             </div>
     </section>
-    
+    <section id="signs">
+        <div class="wrap">
+            <div id="particles-js"></div>
+            <h2>Choose Your Zodiac Sign</h2>
+            <div class="buttons">
+                
+                <div class="modal-box">
+                    <a href="#ohitsuzi" class="button">
+                        <img src="images/aries.png">
+                        <p>おひつじ座</p>
+                    </a>
+                </div>
+                <div id="ohitsuzi" style="display: none;" class="sign">
+                    <p>test</p>
+                </div>
+
+
+                <a href="oushi" class="button">
+                    <img src="images/taurus.png">
+                    <p>おうし座</p>
+                </a>
+                <a href="futago" class="button">
+                    <img src="images/gemini.png">
+                    <p>ふたご座</p>
+                </a>
+                <a href="kani" class="button">
+                    <img src="images/cancer.png">
+                    <p>かに座</p>
+                </a>
+                <a href="shishi" class="button">
+                    <img src="images/leo.png">
+                    <p>しし座</p>
+                </a>
+                <a href="otome" class="button">
+                    <img src="images/virgo.png">
+                    <p>おとめ座</p>
+                </a>
+                <a href="tenbin" class="button">
+                    <img src="images/libra.png">
+                    <p>てんびん座</p>
+                </a>
+                <a href="sasori" class="button">
+                    <img src="images/scorpius.png">
+                    <p>さそり座</p>
+                </a>
+                <a href="ite" class="button">
+                    <img src="images/sagittarius.png">
+                    <p>いて座</p>
+                </a>
+                <a href="yagi" class="button">
+                    <img src="images/caprocornus.png">
+                    <p>やぎ座</p>
+                </a>
+                <a href="mizugame" class="button">
+                    <img src="images/aruarius.png">
+                    <p>みずがめ座</p>
+                </a>
+                <a href="uo" class="button">
+                    <img src="images/pisces.png">
+                    <p>うお座</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="conversation">
+        <img src="images/cloud.png" class="cloud-top">
+        <img src="images/cloud.png" class="cloud-bottom">
+        <div class="conversation-text">
+            <h2>Let's start a conversation</h2>
+            <p>西洋は特に、星座がよく話の話題になることがあります。英語でのフレーズを覚えておくことで、
+                初対面で相手のことをより理解できるかもしれません。<br> 
+                自分の星座だけでも、発音と特徴を覚えておくといいかもしれませんね。
+            </p>
+        </div>
+        <div class="speech-bubbles">
+            <p class="ask">What's your zodiac sign?</p>
+            <p class="answer">I'm a Leo, you?</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-box">
+            <div class="contact-text">
+                <h2>Who made this website?</h2>
+                <p>
+                    立命館大学3年生の西田七海です。<br>
+                    ご意見やご質問等がありましたら、お気軽にお問い合わせください。
+                </p>
+            </div>
+            <div class="icons">
+                <a href="http://girl-solo-travel-thesevenseas.com/" class="icon">
+                    <img src="images/website.png" alt="">
+                </a>
+                <a href="mailto:nanami.nishida729@gmail.com" class="icon">
+                    <img src="images/email.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/where.is_the.sushi/" class="icon">
+                    <img src="images/instagram.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/modaal.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
