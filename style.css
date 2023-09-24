@@ -199,7 +199,81 @@ canvas{
     margin-bottom: 48px;
 }
 
+.modaal-container{
+    width: 502px;
+    height: 632px;
+    background-color: #1E1E1E;
+}
+
+.modaal-content-container{
+    padding: 0;
+}
+
+.top{
+    background-color: #F1EBE7;
+    border-bottom-left-radius: 80px;
+    height: 242px;
+    display: flex;
+    position: relative;
+}
+
+.top h3{
+    font-size: 60px;
+    font-family: 'Gideon Roman', cursive;
+    letter-spacing: -0.05em;
+    color: #333;
+    margin: 47px 0px 0px 80px;
+}
+
+.top p{
+    font-size: 20px;
+    color: #333;
+    margin-left: 58px;
+    line-height: 40px;
+}
+
+.top span{
+    font-family: 'Gideon Roman', cursive;
+    letter-spacing: -0.05em;
+    color: #333;
+}
+
+.top .kira-box{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.top .img-box{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 0%;
+    bottom: 10%;
+}
+
+.bottom{
+    padding: 57px;
+}
+
+.bottom h4{
+    font-size: 16px;
+    color: #F1EBE7;
+}
+
+hr{
+    border: none;
+    border-bottom: 1px solid #A28068;
+    margin: 20px 0;
+}
+
+.bottom p{
+    color: #F1EBE7;
+}
+
 .buttons{
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-wrap: wrap;
     min-width: 252px;
@@ -242,6 +316,10 @@ canvas{
   height: 80%; /* 擬似要素の高さを100%に設定 */
 }
 
+.button:hover{
+    background-color: #B19D8E;
+    opacity: 100%;
+}
 
 .button img{
     display: block;
