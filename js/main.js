@@ -1,4 +1,10 @@
 $(function($) {
+
+    $(document).ready(function() {
+        $('#pagepiling').pagepiling({
+        });
+    });
+
     $(".button").modaal();
 
     $('a[href^="#"]').click(function(){
