@@ -316,6 +316,73 @@ canvas{
     background-color: #1E1E1E;
 }
 
+.buttons{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 252px;
+    justify-content: center;
+}
+
+.button{
+    background-color: #B19D8E;
+    opacity: 70%;
+    width: 232px;
+    height: 232px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 60px;
+    position: relative;
+}
+
+.button::before,
+.button::after {
+  content: ''; /* 擬似要素を生成 */
+  position: absolute; /* 位置を絶対的に設定 */
+  border-radius: 50%; /* 円形の要素に合わせて50%の丸みを設定 */
+}
+
+.button::before {
+  top: 50%; /* 内側の1つ目の枠線の位置を調整 */
+  left: 50%; /* 内側の1つ目の枠線の位置を調整 */
+  transform: translate(-50%,-50%);
+  border: 2px solid #333; /* 1つ目の枠線のスタイルと色を設定 */
+  width: 75%; /* 擬似要素の幅を100%に設定 */
+  height: 75%; /* 擬似要素の高さを100%に設定 */
+}
+
+.button::after {
+  top: 50%; /* 内側の2つ目の枠線の位置を調整 */
+  left: 50%; /* 内側の2つ目の枠線の位置を調整 */
+  transform: translate(-50%,-50%);
+  border: 2px dotted #333; /* 2つ目の枠線のスタイルを点線に設定 */
+  width: 80%; /* 擬似要素の幅を100%に設定 */
+  height: 80%; /* 擬似要素の高さを100%に設定 */
+}
+
+.button:hover{
+    background-color: #B19D8E;
+    opacity: 100%;
+}
+
+.button img{
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.button p{
+    color: #333;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
 #signs h2{
     text-align: center;
     font-size: 40px;
@@ -323,6 +390,8 @@ canvas{
     letter-spacing: -0.05em;
     margin-bottom: 48px;
 }
+
+/*以下モーダルの中身*/
 
 .modaal-container{
     width: 502px;
@@ -531,77 +600,8 @@ hr{
     color: #F1EBE7;
 }
 
-.buttons{
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 252px;
-    justify-content: center;
-}
+/*以上モーダルの中身*/
 
-.button{
-    background-color: #B19D8E;
-    opacity: 70%;
-    width: 232px;
-    height: 232px;
-    border-radius: 50%;
-    text-align: center;
-    margin: 60px;
-    position: relative;
-}
-
-.button::before,
-.button::after {
-  content: ''; /* 擬似要素を生成 */
-  position: absolute; /* 位置を絶対的に設定 */
-  border-radius: 50%; /* 円形の要素に合わせて50%の丸みを設定 */
-}
-
-.button::before {
-  top: 50%; /* 内側の1つ目の枠線の位置を調整 */
-  left: 50%; /* 内側の1つ目の枠線の位置を調整 */
-  transform: translate(-50%,-50%);
-  border: 2px solid #333; /* 1つ目の枠線のスタイルと色を設定 */
-  width: 75%; /* 擬似要素の幅を100%に設定 */
-  height: 75%; /* 擬似要素の高さを100%に設定 */
-}
-
-.button::after {
-  top: 50%; /* 内側の2つ目の枠線の位置を調整 */
-  left: 50%; /* 内側の2つ目の枠線の位置を調整 */
-  transform: translate(-50%,-50%);
-  border: 2px dotted #333; /* 2つ目の枠線のスタイルを点線に設定 */
-  width: 80%; /* 擬似要素の幅を100%に設定 */
-  height: 80%; /* 擬似要素の高さを100%に設定 */
-}
-
-.button:hover{
-    background-color: #B19D8E;
-    opacity: 100%;
-}
-
-.button img{
-    display: block;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.button p{
-    color: #333;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-@media (max-width: 768px){
-    .wrap{
-        height: 2300px;
-    }
-}
 
 @media (max-width: 390px){
     .wrap{
@@ -616,7 +616,6 @@ hr{
         min-width: 252px;
     }
 
-    /*以下表示されないなぜ*/
 
     .button {
         width: 161px;
@@ -634,7 +633,7 @@ hr{
         font-size: 15px;
     }
 
-     /*以上表示されないなぜ*/
+
     
     .button::before {
       width: 80%; /* 擬似要素の幅を100%に設定 */
