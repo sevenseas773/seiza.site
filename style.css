@@ -86,6 +86,43 @@ span {
     padding: 10px 0px;
 }
 
+@media (max-width: 820px){
+    #firstview{
+        min-width: 820px;
+        min-height: 1180px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .first-text{
+        min-width: 820px;
+        min-height: 1180px;
+    }
+
+    #firstview h1{
+        font-size: 80px;
+        text-align: left;
+        position: absolute;
+        bottom: 35%;
+        left: -5%;
+        transform: rotate(-90deg)
+    }
+
+    br{
+        display: none;
+    }
+
+    #firstview p{
+        font-size: 20px;
+        bottom:30px;
+        left: 18%;
+    }
+   
+}
+
+
 @media (max-width: 390px){
     #firstview{
         background-image: url(images/SP_background.png);
@@ -175,6 +212,47 @@ span {
     margin: 20px;
     display: block;
     content: "";
+}
+
+@media (max-width: 768px){
+
+    #history{
+        padding: 130px 0px;
+        height: 844px;
+    }
+
+    .pc {display: none !important;}
+    .sp{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: block !important;
+    }
+
+    .history-text{
+        top: 50%;
+        left: 50%;
+    }
+
+    #history h2{
+        font-size: 20px;
+        margin: 0px;
+    }
+
+   
+    #history p {
+        margin-top: 16px;
+        font-size: 12px;
+        min-width: 270px;
+    }
+
+    #history br{
+        margin: 10px;
+        display: block;
+        content: "";
+    }
+
 }
 
 @media (max-width: 390px){
@@ -519,6 +597,11 @@ hr{
     transform: translate(-50%,-50%);
 }
 
+@media (max-width: 768px){
+    .wrap{
+        height: 2300px;
+    }
+}
 
 @media (max-width: 390px){
     .wrap{
@@ -533,12 +616,25 @@ hr{
         min-width: 252px;
     }
 
-    .button{
+    /*以下表示されないなぜ*/
+
+    .button {
         width: 161px;
         height: 161px;
         margin: 10px;
+        background-color: #C6B7AD;
     }
     
+    .button img{
+        width: 45px;
+        height: 54px;
+    }
+    
+    .button p{
+        font-size: 15px;
+    }
+
+     /*以上表示されないなぜ*/
     
     .button::before {
       width: 80%; /* 擬似要素の幅を100%に設定 */
@@ -549,7 +645,7 @@ hr{
       width: 85%; /* 擬似要素の幅を100%に設定 */
       height: 85%; /* 擬似要素の高さを100%に設定 */
     }
-    
+
     .modaal-container{
         width: 299px;
         height: 469px;
@@ -742,9 +838,7 @@ hr{
     .uo-box img{
         width: 128px;
         height: 106px;
-    }
-    
-    
+    }    
     
 }
 
@@ -899,6 +993,43 @@ hr{
   
   }
 
+  @media (max-width: 768px){
+    #conversation{
+        height: 500px;
+    }
+    
+    .cloud-top{
+       display: none;
+    }
+    
+    .cloud-bottom{
+       display: none;
+    }
+    
+    #conversation h2{
+        font-size: 20px;
+        margin-bottom: 42px;
+        padding-top: 61px;
+    }
+    
+    .conversation-text p{
+        font-size: 12px;
+        max-width: 292px;
+    }
+    
+    .speech-bubbles{
+        max-width: 704px;
+        position: relative;
+        height: 220px;
+        margin: 0 auto;
+        max-width: 292px;
+    }
+    
+    .speech-bubbles p{
+        font-size: 12px;
+    }
+  
+  }
 
 #contact{
     background-color: #1E1E1E;
@@ -944,42 +1075,80 @@ hr{
 
 @media (max-width: 390px){
 
-    #contact{
-        height: 300px;
-        padding: 25px;
-    }
-    
-    .contact-box{
-        border: 1px solid #A28068;
-        padding: 10px;
-        display: block;
-        border-radius: 20px;
-    }
-    
-    #contact h2{
-        font-size: 20px;
-        justify-content: center;
-        margin-top: 22px;
-    }
-    
-    #contact p{
-        font-size: 12px;
-        text-align: left;
-        line-height: 2;
-        text-wrap: wrap;
-        margin: 39px 0px 0px 26px;
-        max-width: 193px;
-    }
-    
-    .icons{
-        margin: 0;
-        height: 60px;
-        justify-content: end;
+        #contact{
+            height: 300px;
+            padding: 25px;
+        }
+        
+        .contact-box{
+            border: 1px solid #A28068;
+            padding: 10px;
+            display: block;
+            border-radius: 20px;
+        }
+        
+        #contact h2{
+            font-size: 20px;
+            justify-content: center;
+            margin-top: 22px;
+        }
+        
+        #contact p{
+            font-size: 12px;
+            text-align: left;
+            line-height: 2;
+            text-wrap: wrap;
+            margin: 39px 0px 0px 26px;
+            max-width: 193px;
+        }
+        
+        .icons{
+            margin: 0;
+            height: 60px;
+            justify-content: end;
+        }
+
+        .icon{
+            padding: 10px;
+        }
     }
 
-    .icon{
-        padding: 10px;
+    @media (max-width: 768px){
+
+        #contact{
+            height: 300px;
+            padding: 25px;
+        }
+        
+        .contact-box{
+            border: 1px solid #A28068;
+            padding: 10px;
+            display: block;
+            border-radius: 20px;
+        }
+        
+        #contact h2{
+            font-size: 20px;
+            justify-content: center;
+            margin-top: 22px;
+        }
+        
+        #contact p{
+            font-size: 12px;
+            text-align: left;
+            line-height: 2;
+            text-wrap: wrap;
+            margin: 39px 0px 0px 26px;
+            max-width: 193px;
+        }
+        
+        .icons{
+            margin: 0;
+            height: 60px;
+            justify-content: end;
+        }
+    
+        .icon{
+            padding: 10px;
+        }
     }
-
-
-}
