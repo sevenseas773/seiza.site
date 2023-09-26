@@ -416,20 +416,34 @@ canvas{
     font-family: 'Gideon Roman', cursive;
     letter-spacing: -0.05em;
     color: #333;
-    margin: 47px 0px 0px 80px;
+    margin: 47px 0px 0px 58px;
+}
+
+audio{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    left: 25%;
+    bottom: 40%;
+}
+
+.top-text{
+    position: relative;
 }
 
 .top p{
     font-size: 20px;
     color: #333;
     margin-left: 58px;
-    line-height: 40px;
+    line-height: 80px;
 }
 
-.top span{
+.top-text span{
     font-family: 'Gideon Roman', cursive;
     letter-spacing: -0.05em;
     color: #333;
+    position: absolute;
+    bottom: 0%;
 }
 
 .top .kira-box{
@@ -599,9 +613,6 @@ hr{
 .bottom p{
     color: #F1EBE7;
 }
-
-/*以上モーダルの中身*/
-
 
 @media (max-width: 390px){
     .wrap{
