@@ -86,44 +86,9 @@ span {
     padding: 10px 0px;
 }
 
-@media (max-width: 820px){
-    #firstview{
-        min-width: 820px;
-        min-height: 1180px;
-    }
-
-    nav{
-        display: none;
-    }
-
-    .first-text{
-        min-width: 820px;
-        min-height: 1180px;
-    }
-
-    #firstview h1{
-        font-size: 80px;
-        text-align: left;
-        position: absolute;
-        bottom: 35%;
-        left: -5%;
-        transform: rotate(-90deg)
-    }
-
-    br{
-        display: none;
-    }
-
-    #firstview p{
-        font-size: 20px;
-        bottom:30px;
-        left: 18%;
-    }
-   
-}
 
 
-@media (max-width: 390px){
+@media (max-width: 1024px){
     #firstview{
         background-image: url(images/SP_background.png);
         min-width: 390px;
@@ -134,17 +99,19 @@ span {
         display: none;
     }
 
+    
     .first-text{
         min-width: 390px;
         min-height: 844px;
+        position: relative;
     }
 
     #firstview h1{
+        position: absolute;
+        bottom: 60%;
+        left: -30%;
         font-size: 80px;
         text-align: left;
-        position: absolute;
-        bottom: 45%;
-        left: -35%;
         transform: rotate(-90deg)
     }
 
@@ -154,8 +121,11 @@ span {
 
     #firstview p{
         font-size: 20px;
-        bottom:30px;
+        right: 6%;
+        bottom: 18%;
     }
+
+
 }
 
 #history{
@@ -214,7 +184,7 @@ span {
     content: "";
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     #history{
         padding: 130px 0px;
@@ -244,48 +214,8 @@ span {
     #history p {
         margin-top: 16px;
         font-size: 12px;
-        min-width: 270px;
-    }
-
-    #history br{
-        margin: 10px;
-        display: block;
-        content: "";
-    }
-
-}
-
-@media (max-width: 390px){
-
-    #history{
-        padding: 130px 0px;
-        height: 844px;
-    }
-
-    .pc {display: none !important;}
-    .sp{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        display: block !important;
-    }
-
-    .history-text{
-        top: 50%;
-        left: 50%;
-    }
-
-    #history h2{
-        font-size: 20px;
-        margin: 0px;
-    }
-
-   
-    #history p {
-        margin-top: 16px;
-        font-size: 12px;
-        min-width: 270px;
+        max-width: 300px;
+        
     }
 
     #history br{
@@ -614,7 +544,7 @@ hr{
     color: #F1EBE7;
 }
 
-@media (max-width: 390px){
+@media (max-width: 1024px){
     .wrap{
         height: 1300px;
     }
@@ -656,6 +586,8 @@ hr{
       height: 85%; /* 擬似要素の高さを100%に設定 */
     }
 
+    /*以下モダール*/
+
     .modaal-container{
         width: 299px;
         height: 469px;
@@ -669,16 +601,29 @@ hr{
     
     .top h3{
         font-size: 30px;
-        margin: 25px 0px 0px 67px;
+        margin: 25px 0px 0px 45px;
+    }
+
+    
+    audio{
+        width: 100px;
+        height: 30px;
+        position: absolute;
+        left: 25%;
+        bottom: 40%;
     }
     
     .top p{
         font-size: 15px;
-        color: #333;
         margin-left: 45px;
-        line-height: 30px;
+        line-height: 80px;
     }
-    
+
+        
+    .top-text span{
+        position: absolute;
+        top: 50%;
+    }
     
     .top .kira-box{
         position: absolute;
@@ -965,7 +910,7 @@ hr{
     z-index: 1;
   }
 
-  @media (max-width: 390px){
+  @media (max-width: 1024px){
     #conversation{
         height: 500px;
     }
@@ -1083,7 +1028,7 @@ hr{
     padding: 10px;
 }
 
-@media (max-width: 390px){
+@media (max-width: 1024px){
 
         #contact{
             height: 300px;
