@@ -61,10 +61,9 @@ nav a{
     text-align: left;
     font-family: 'Gideon Roman';
     letter-spacing: -0.1em;
-    font-size: 300px;
+    font-size: 20vw;
     display: flex;
     justify-content: center;
-    
 }
 
 #firstview p{
@@ -88,7 +87,7 @@ span {
 
 
 
-@media (max-width: 1024px){
+@media (max-width: 428px){
     #firstview{
         background-image: url(images/SP_background.png);
         min-width: 390px;
@@ -253,6 +252,9 @@ canvas{
     flex-wrap: wrap;
     min-width: 252px;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1407px;
 }
 
 .button{
@@ -554,7 +556,9 @@ hr{
     }
 
     .buttons{
-        min-width: 252px;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 542px;
     }
 
 
