@@ -66,6 +66,8 @@ nav a{
     justify-content: center;
 }
 
+
+
 #firstview p{
     font-size: 25px;
     max-width: 310px;
@@ -202,6 +204,7 @@ span {
     .history-text{
         top: 50%;
         left: 50%;
+        min-width: 300px;
     }
 
     #history h2{

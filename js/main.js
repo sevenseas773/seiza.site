@@ -1,8 +1,7 @@
-$(function($) {
+$(function($) {   
 
 
 
-    
     $(document).ready(function() {
         $('#pagepiling').pagepiling({
         });
